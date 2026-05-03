@@ -12,8 +12,8 @@ pipeline {
         stage('Image Build') {
             steps {
                 echo 'Building Docker Image...'
-                // This command will run once we have your Dockerfile ready
-                // sh 'docker build -t devops-app .'
+                //This command will run once we have your Dockerfile ready
+                sh 'docker build -t devops-coursework-app .'
             }
         }
 
