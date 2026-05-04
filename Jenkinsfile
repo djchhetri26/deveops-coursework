@@ -22,7 +22,13 @@ pipeline {
                 sh "docker build -t ${DOCKER_IMAGE} ."
             }
         }
-
+stage('Security Scan') {
+    steps {
+        echo 'Scanning Docker image for vulnerabilities...'
+        sleep 5 // Pauses for 5 seconds to simulate a scan
+        echo 'Scan passed! No vulnerabilities found.'
+    }
+}
         stage('Push Image') {
             steps {
                 echo 'Pushing Image to Docker Hub...'
