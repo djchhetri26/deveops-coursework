@@ -32,4 +32,19 @@ Two AWS EC2 instances were used:
 
 # Repository Structure
 
+# Docker Implementation
+
+The application was containerised using a lightweight Nginx Docker image.
+
+#Key Features:
+- Uses nginx:alpine
+- Serves static HTML content
+- Runs on port 8081
+
+# Commands:
+
+```bash
+docker build -t djchhetri26/devops-coursework-app .
+docker push djchhetri26/devops-coursework-app
+
 
