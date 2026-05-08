@@ -47,4 +47,34 @@ The application was containerised using a lightweight Nginx Docker image.
 docker build -t djchhetri26/devops-coursework-app .
 docker push djchhetri26/devops-coursework-app
 
+# Jenkins CI/CD Pipeline
 
+Jenkins was used to automate the CI/CD pipeline using a Jenkinsfile.
+
+# Pipeline Stages:
+- Checkout SCM
+- Code Pull
+- Image Build
+- Security Scan
+- Push Image
+- Deploy
+
+The pipeline was executed multiple times during development and successfully built and pushed the Docker image to Docker Hub.
+
+# Kubernetes Deployment
+
+The application was deployed using Kubernetes with Minikube.
+
+# Commands used:
+
+```bash
+kubectl create deployment my-devops-app --image=djchhetri26/devops-coursework-app
+kubectl get pods
+kubectl port-forward deployment/my-devops-app 8080:80
+
+kubectl scale deployment my-devops-app --replicas=3
+kubectl get pods
+
+# Conclusion
+
+This project demonstrates how Git, Docker, Jenkins and Kubernetes work together in a CI/CD pipeline to automate application deployment.
