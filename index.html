@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Digital CV</title>
-</head>
-<body>
-    <h1>Dhiraj Chhetri Khatri</h1>
-    <h2>Cloud & DevOps Engineer</h2>
-    <p>This is my first webpage for the Container Orchestration coursework.</p>
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhiraj Chhetri Khatri — DevOps Engineer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #0D1B40; color: #fff; min-height: 100vh; }
+    .hero { background: #0D1B40; padding: 3rem 2rem 2rem; text-align: center; border-bottom: 3px solid #00B4D8; }
+    .avatar { width: 80px; height: 80px; border-radius: 50%; background: #00B4D8; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin: 0 auto 1rem; color: #0D1B40; }
+    .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .hero h2 { font-size: 1rem; color: #00B4D8; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
+    .badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+    .badge { background: rgba(0,180,216,0.15); border: 1px solid #00B4D8; color: #00B4D8; padding: 4px 14px; border-radius: 20px; font-size: 12px; }
+    .main { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section-title { font-size: 1rem; font-weight: 600; color: #00B4D8; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(0,180,216,0.3); }
+    .about { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-left: 3px solid #00B4D8; }
+    .about p { color: #ccc; line-height: 1.7; font-size: 0.95rem; }
+    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 2rem; }
+    .stat { background: rgba(255,255,255,0.05); border-radius: 10px; padding: 1rem; text-align: center; border: 1px solid rgba(0,180,216,0.2); }
+    .stat .num { font-size: 1.6rem; font-weight: 700; color: #00B4D8; }
+    .stat .lbl { font-size: 0.75rem; color: #aaa; margin-top: 2px; }
+    .pipeline { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+    .pipeline-flow { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; margin: 1rem 0; }
+    .pstep { background: #0D1B40; border: 1px solid #00B4D8; border-radius: 8px; padding: 8px 14px; font-size: 12px; text-align: center; }
+    .pstep span { display: block; font-size: 9px; color: #00B4D8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+    .arrow { color: #00B4D8; font-size: 16px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+    .skill-card { background: rgba(255,255,255,0.05); border-radius: 10px; padding: 1rem; text-align: center; border: 1px solid rgba(0,180,216,0.2); }
+    .skill-icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+    .skill-card h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .skill-card p { font-size: 0.75rem; color: #aaa; }
+    .project {
